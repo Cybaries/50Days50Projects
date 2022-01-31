@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:blueviolet;
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 25px;
+    cursor: pointer;
+    transition: border-radius  ease-in;
+    border: 0;
+    background-color: #fff;
+}
+.search{
+    border-radius: 0;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+.input{
+    width: 0px;
+    height: 50px;
+    visibility: hidden;
+    padding: 2px;
+    transition: width 0.4s ease-in;
+    border: 0;
+}
+.search-bar{
+    width: 180px;
+    visibility: visible;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
