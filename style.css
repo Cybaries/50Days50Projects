@@ -8,7 +8,7 @@
 }
 
 body{
-    width: 100%;
+    width: 100vw;
     height: 100vmax;
     position: relative;
     font-family: 'Lato',sans-serif;
@@ -18,9 +18,9 @@ body{
 .Title{
     width: 60rem;
     height: 100px;
-    position: absolute;
-    top: 150px;
+    margin-bottom: 20px;
     text-align: center;
+    top: -120px;
     font-size: 50px;
     font-family:'Roboto',sans-serif;
 }
@@ -36,18 +36,27 @@ body{
     padding: 20px;
 }
 .inputBar{
-    height: 40px;
-    width: 80rem;
+    height: 200px;
+    width: 100vw;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-bottom: 50px;
     position: sticky;
-    top: 15px;
+    top: 0px;
+    background-color: rgba(174, 253, 253, 1);
+}
+.input{
+    width: 100vw;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 input{
     height: 70px;
-    width: 50em;
+    width: 50%;
     font-size: 30px;
     padding: 5px;
 }
